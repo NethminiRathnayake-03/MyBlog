@@ -1,0 +1,169 @@
+/* General body and page settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* updated font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Top bar header (header + nav) */
+header.top-bar {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Flex container for title + nav */
+header.top-bar .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+/* Header title */
+header.top-bar h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: white;
+}
+
+/* Navigation links as rounded buttons */
+header.top-bar nav a {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #0056b3;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px; /* rounded edges */
+    transition: all 0.3s ease;
+}
+
+header.top-bar nav a:hover {
+    background-color: #ffdd57;
+    color: #007bff;
+    text-decoration: none;
+    transform: translateY(-2px); /* small hover effect */
+}
+
+/* Container for main content */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2 {
+    color: #007bff;
+}
+
+/* Form inputs */
+textarea, input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Blog box */
+.blog-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease;
+}
+
+.blog-box:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.blog-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-box a:hover {
+    text-decoration: underline;
+}
+.new-blog-box {
+    background-color: #5ddbe2;  /* light blue fill */
+    color: rgb(22, 2, 2);               /* text color */
+    text-align: center; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin: 20px auto; 
+}
+
+/* Footer style */
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    background-color: #343a40;
+    color: white;
+    margin-top: 0; /* remove extra margin */
+    border-radius: 0 0 10px 10px; /* optional: rounded bottom corners */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header.top-bar .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header.top-bar nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header.top-bar nav a {
+        margin: 5px 10px 0 0;
+        padding: 6px 12px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header.top-bar .site-title {
+        font-size: 1.4rem;
+    }
+
+    header.top-bar nav a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 15px;
+    }
+}
