@@ -1,4 +1,5 @@
 # IN2120 Blog Application
+235092C-S.M.N.Rathnayake
 
 This is my take-home assignment for IN2120 (Web Programming).
 Built using PHP, MySQL, HTML, CSS, and JavaScript.
