@@ -17,21 +17,17 @@ if(!$blog) {
     exit;
 }
 ?>
-
-<header>
-    <h1>My Blog</h1>
+<header style="display:flex; justify-content:center; margin-top:40px;">
+    <div style="background-color:white; color:#007bff; 
+                padding:30px 300px 20px 40px; /* top, right, bottom, left */ 
+                border-radius:12px; 
+                box-shadow:0 8px 20px rgba(0,0,0,0.15); 
+                text-align:left; 
+                max-width:600px; width:90%;">
+        <h2 style="font-size:2.0rem; margin:0; font-weight:bold;">My Blog</h2>
+        
+    </div>
 </header>
-
-<nav>
-    <a href="index.php">Home</a>
-    <?php if(isset($_SESSION['user_id'])): ?>
-        <a href="editor.php">New Blog</a>
-        <a href="logout.php">Logout</a>
-    <?php else: ?>
-        <a href="login.php">Login</a>
-        <a href="register.php">Register</a>
-    <?php endif; ?>
-</nav>
 
 <div class="container">
     <h2><?= htmlspecialchars($blog['title']) ?></h2>
@@ -45,7 +41,6 @@ if(!$blog) {
         </p>
     <?php endif; ?>
 </div>
+<?php include 'includes/footer.php'; ?>
 
-<footer style="text-align:center; padding:15px; background:#343a40; color:white; margin-top:20px;">
 
-</footer>
